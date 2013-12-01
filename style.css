@@ -1,4 +1,6 @@
 ---
+background-color: "#f6f6f6"
+background-color-secondary: "#3f3f3f"
 ---
 {% include styles/reset.css %}
 {% include styles/pygments.css %}
