@@ -15,10 +15,22 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-#site-title { font-size: 4.2rem; }
+#site-title {
+	font-size: 4.2rem;
+	text-align: center;
+}
 
 #site-subtitle {
 	color: #666;
-	font-size: 3.8rem;
+	font-size: 1.9rem;
 	font-style: italic;
+	text-align: center;
 }
+
+#avatar img {
+	border-radius: 50%;
+	display: inline-block;
+	margin: 0 auto;
+	position: relative;
+}
+
