@@ -34,7 +34,7 @@ header {
 
 #avatar {
 	background: {{page.background-color-secondary}};
-	background: linear-gradient(to bottom, #1a1a1a 0%,{{page.background-color-secondary}} 30%,{{page.background-color-secondary}} 70%,#1a1a1a 100%);
+	background: linear-gradient(to bottom, #1d1d1d 0%,{{page.background-color-secondary}} 41%);
 	height: 8rem;
 	margin-top: 12rem;
 }
@@ -45,5 +45,6 @@ header {
 	display: block;
 	margin: 0 auto;
 	position: relative;
+	top: -9rem;
 }
 
