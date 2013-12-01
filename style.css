@@ -1,5 +1,5 @@
 ---
 ---
-{% for style in site.styles %}
-{% include style %}
-{% endfor %}
+{% include styles/reset.css %}
+{% include styles/pygments.css %}
+
