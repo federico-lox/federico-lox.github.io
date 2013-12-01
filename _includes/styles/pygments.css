@@ -1,5 +1,5 @@
 /* Pygments zenburn theme */
-code{color:#fdce93;background-color:#3f3f3f}
+code, pre{color:#fdce93;background-color:#3f3f3f}
 code .hll{background-color:#222}
 code .c{color:#7f9f7f}
 code .err{color:#e37170;background-color:#3d3535}

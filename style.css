@@ -1,0 +1,5 @@
+---
+---
+{% for style in site.styles %}
+{% include style %}
+{% endfor %}
