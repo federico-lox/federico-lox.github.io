@@ -32,7 +32,9 @@ body {
 	text-align: center;
 }
 
-#avatar > figure > img {
+#header > figure { height: 6rem; }
+
+#header > figure > img {
 	border: 4px solid {{page.background-color}};
 	border-radius: 50%;
 	display: block;
@@ -45,7 +47,6 @@ body {
 	background: {{page.background-color-secondary}};
 	background: linear-gradient(to bottom, #1d1d1d 0%,{{page.background-color-secondary}} 20%);
 	height: 8rem;
-	margin-top: 12rem;
 }
 
 #header > nav li {
