@@ -1,3 +1,7 @@
+---
+background-color: "#f6f6f6"
+background-color-secondary: "#3f3f3f"
+---
 /* layout.css */
 html {
 	/* make 1em or 1rem be 10px */
@@ -5,7 +9,7 @@ html {
 }
 
 body {
-	background-color: #f6f6f6;
+	background-color: {{page.background-color}};
 	color: #000;
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif,
 		"Helvetica Neue", HelveticaNeue, Arial, sans-serif;
@@ -13,6 +17,10 @@ body {
 	line-height: 1.4;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
+}
+
+header {
+	padding-top: 4rem;
 }
 
 #site-title {
@@ -24,16 +32,19 @@ body {
 	color: #666;
 	font-size: 1.9rem;
 	font-style: italic;
+	font-weight: normal;
 	text-align: center;
 }
 
 #avatar {
-	background-color: #3f3f3f;
-	height: 3rem;
+	background: {{page.background-color-secondary}};
+	background: linear-gradient(to bottom, #1a1a1a 0%,{{page.background-color-secondary}} 30%,{{page.background-color-secondary}} 70%,#1a1a1a 100%);
+	height: 8rem;
+	margin-top: 12rem;
 }
 
 #avatar img {
-	border: 4px solid #fff;
+	border: 4px solid {{page.background-color}};
 	border-radius: 50%;
 	display: block;
 	margin: 0 auto;
