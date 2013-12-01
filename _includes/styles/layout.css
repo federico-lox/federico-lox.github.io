@@ -27,9 +27,15 @@ body {
 	text-align: center;
 }
 
+#avatar {
+	background-color: #3f3f3f;
+	height: 3rem;
+}
+
 #avatar img {
+	border: 4px solid #fff;
 	border-radius: 50%;
-	display: inline-block;
+	display: block;
 	margin: 0 auto;
 	position: relative;
 }
