@@ -2,4 +2,4 @@
 ---
 {% include styles/reset.css %}
 {% include styles/pygments.css %}
-
+{% include styles/layout.css %}

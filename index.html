@@ -9,31 +9,32 @@
 			href="style.css?cb={{site.cache-buster}}"
 			media="screen" />
 		<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<title>{{site.title}} by {{site.author.name}}</title>
 	</head>
 
 	<body>
 		<header>
-			<h1>{{site.title}}</h1>
-			<h2>{{site.subtitle}}</h2>
+			<h1 id="site-title">{{site.title}}</h1>
+			<h2 id="site-subtitle">{{site.subtitle}}</h2>
 		</header>
-		
+
 		<section>
 			Lorem Ipsum, blah blah blah.
 			{% highlight python %}
 import asd
 
 def doit():
-	print asd.foo
+  print asd.foo
 
 doit()
 			{% endhighlight %}
 		</section>
-		
+
 		<footer>
 			&copy; 2013 by {{site.author.name}}
 		</footer>
 	</body>
 </html>
+

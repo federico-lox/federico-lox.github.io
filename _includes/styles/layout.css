@@ -1,0 +1,24 @@
+/* layout.css */
+html {
+	/* make 1em or 1rem be 10px */
+	font-size: 62.5%
+}
+
+body {
+	background-color: #f6f6f6;
+	color: #000;
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif,
+		"Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.4;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+#site-title { font-size: 4.2rem; }
+
+#site-subtitle {
+	color: #666;
+	font-size: 3.8rem;
+	font-style: italic;
+}

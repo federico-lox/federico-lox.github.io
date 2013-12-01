@@ -1,3 +1,4 @@
+/* reset.css */
 /*
 HTML5 CSS Reset
 Based on Eric Meyer's CSS Reset
@@ -17,43 +18,31 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, audio, canvas, details, figcaption,
 figure, footer, header, hgroup, mark, menu, meter, nav,
 output, progress, section, summary, time, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
 	background: transparent;
+	border: 0;
+	font-size: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
 }
 
-body {
-	line-height: 1;
-}
+body { line-height: 1; }
 
-article, aside, dialog, figure, footer, header, 
-hgroup, nav, section, blockquote { 
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section, blockquote {
 	display: block;
 }
 
-nav ul {
-	list-style: none;
-}
+nav ul { list-style: none; }
 
-ol {
-	list-style: decimal;
-}
+ol { list-style: decimal; }
 
-ul {
-	list-style: disc;
-}
+ul { list-style: disc; }
 
-ul ul {
-	list-style: circle;
-}
+ul ul { list-style: circle; }
 
-blockquote, q {
-	quotes: none;
-}
+blockquote, q { quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -61,17 +50,11 @@ q:before, q:after {
 	content: none;
 }
 
-ins {
-	text-decoration: underline;
-}
+ins { text-decoration: underline; }
 
-del {
-	text-decoration: line-through;
-}
+del { text-decoration: line-through; }
 
-mark {
-	background: none;
-}
+mark { background: none; }
 
 abbr[title], dfn[title] {
 	border-bottom:1px dotted #000;
@@ -79,25 +62,21 @@ abbr[title], dfn[title] {
 }
 
 /* tables still need 'cellspacing="0"' in the markup */
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+table { border-collapse: collapse; border-spacing: 0; }
 
 hr {
+	border: 0;
+	border-top: 1px solid #ccc;
 	display: block;
 	height: 1px;
-	border: 0;	
-	border-top: 1px solid #ccc;
 	margin: 1em 0;
 	padding: 0;
 }
 
 input[type="submit"], input[type="button"], button {
-    padding: 0 !important;
-    margin: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
-input, select, a img {
-	vertical-align: middle;
-}
+input, select, a img { vertical-align: middle; }
+
