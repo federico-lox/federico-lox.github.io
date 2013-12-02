@@ -19,6 +19,7 @@ CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE
 IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
 
 1. **Definitions**
+
   a. **"Adaptation"** means a work based upon the Work, or upon the Work and
      other pre-existing works, such as a translation, adaptation, derivative
      work, arrangement of music or other alterations of a literary or artistic
@@ -30,6 +31,7 @@ IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
      Work is a musical work, performance or phonogram, the synchronization of
      the Work in timed-relation with a moving image ("synching") will be
      considered an Adaptation for the purpose of this License.
+
   b. **"Collection"** means a collection of literary or artistic works, such as
      encyclopedias and anthologies, or performances, phonograms or broadcasts,
      or other works or subject matter other than works listed in Section 1(g)
@@ -40,14 +42,18 @@ IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
      themselves, which together are assembled into a collective whole. A work
      that constitutes a Collection will not be considered an Adaptation (as
      defined above) for the purposes of this License.
+
   c. **"Distribute"** means to make available to the public the original and
      copies of the Work or Adaptation, as appropriate, through sale or other
      transfer of ownership.
+
   d. **"License Elements"** means the following high-level license attributes
      as selected by Licensor and indicated in the title of this License:
      Attribution, Noncommercial, ShareAlike.
+
   e. **"Licensor"** means the individual, individuals, entity or entities that
      offer(s) the Work under the terms of this License.
+
   f. **"Original Author"** means, in the case of a literary or artistic work,
      the individual, individuals, entity or entities who created the Work or if
      no individual or entity can be identified, the publisher; and in addition
@@ -58,6 +64,7 @@ IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
      entity who first fixes the sounds of a performance or other sounds; and,
      (iii) in the case of broadcasts, the organization that transmits the
      broadcast.
+
   g. **"Work"** means the literary and/or artistic work offered under the terms
      of this License including without limitation any production in the literary,
      scientific and artistic domain, whatever may be the mode or form of its
@@ -75,11 +82,13 @@ IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
      it is protected as a copyrightable work; or a work performed by a variety
      or circus performer to the extent it is not otherwise considered a
      literary or artistic work.
+
   h. **"You"** means an individual or entity exercising rights under this
      License who has not previously violated the terms of this License with
      respect to the Work, or who has received express permission from the
      Licensor to exercise rights under this License despite a previous
      violation.
+
   i. **"Publicly Perform"** means to perform public recitations of the Work and
      to communicate to the public those public recitations, by any means or
      process, including by wire or wireless means or public digital
@@ -89,6 +98,7 @@ IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
      means or process and the communication to the public of the performances
      of the Work, including by public digital performance; to broadcast and
      rebroadcast the Work by any means including signs, sounds or images.
+
   j. **"Reproduce"** means to make copies of the Work by any means including
      without limitation by sound or visual recordings and the right of fixation
      and reproducing fixations of the Work, including storage of a protected
@@ -101,25 +111,32 @@ IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.
    Licensor hereby grants You a worldwide, royalty-free, non-exclusive,
    perpetual (for the duration of the applicable copyright) license to exercise
    the rights in the Work as stated below:
+
   a. to Reproduce the Work, to incorporate the Work into one or more
-     Collections, and to Reproduce the Work as incorporated in the Collections;
+     Collections, and to Reproduce the Work as incorporated in the Collections
+
   b. to create and Reproduce Adaptations provided that any such Adaptation,
      including any translation in any medium, takes reasonable steps to clearly
      label, demarcate or otherwise identify that changes were made to the
      original Work. For example, a translation could be marked "The original
      work was translated from English to Spanish," or a modification could
      indicate "The original work has been modified.";
+
   c. to Distribute and Publicly Perform the Work including as incorporated in
      Collections; and,
+
   d. to Distribute and Publicly Perform Adaptations.
+
 The above rights may be exercised in all media and formats whether now known or
 hereafter devised. The above rights include the right to make such
 modifications as are technically necessary to exercise the rights in other
 media and formats. Subject to Section 8(f), all rights not expressly granted by
 Licensor are hereby reserved, including but not limited to the rights described
 in Section 4(e).
+
 4. **Restrictions**. The license granted in Section 3 above is expressly made
    subject to and limited by the following restrictions:
+
   a. You may Distribute or Publicly Perform the Work only under the terms of
      this License. You must include a copy of, or the Uniform Resource
      Identifier (URI) for, this License with every copy of the Work You
@@ -141,6 +158,7 @@ in Section 4(e).
      create an Adaptation, upon notice from any Licensor You must, to the
      extent practicable, remove from the Adaptation any credit as required by
      Section 4(d), as requested.
+
   b. You may Distribute or Publicly Perform an Adaptation only under: (i) the
      terms of this License; (ii) a later version of this License with the same
      License Elements as this License; (iii) a Creative Commons jurisdiction
@@ -162,6 +180,7 @@ in Section 4(e).
      Section 4(b) applies to the Adaptation as incorporated in a Collection,
      but this does not require the Collection apart from the Adaptation itself
      to be made subject to the terms of the Applicable License.
+
   c. You may not exercise any of the rights granted to You in Section 3 above
      in any manner that is primarily intended for or directed toward commercial
      advantage or private monetary compensation. The exchange of the Work for
@@ -170,6 +189,7 @@ in Section 4(e).
      advantage or private monetary compensation, provided there is no payment
      of any monetary compensation in con-nection with the exchange of
      copyrighted works.
+
   d. If You Distribute, or Publicly Perform the Work or any Adaptations or
      Collections, You must, unless a request has been made pursuant to Section
      4(a), keep intact all copyright notices for the Work and provide,
@@ -199,6 +219,7 @@ in Section 4(e).
      Attribution Parties, as appropriate, of You or Your use of the Work,
      without the separate, express prior written permission of the Original
      Author, Licensor and/or Attribution Parties.
+
   e. For the avoidance of doubt:
     1. **Non-waivable Compulsory License Schemes**. In those jurisdictions in
        which the right to collect royalties through any statutory or compulsory
@@ -219,6 +240,7 @@ in Section 4(e).
        licensing schemes, via that society, from any exercise by You of the
        rights granted under this License that is for a purpose or use which is
        otherwise than noncommercial as permitted under Section 4(c).
+
   f. Except as otherwise agreed in writing by the Licensor or as may be
      otherwise permitted by applicable law, if You Reproduce, Distribute or
      Publicly Perform the Work either by itself or as part of any Adaptations
@@ -249,6 +271,7 @@ in Section 4(e).
    OUT OF THIS LICENSE OR THE USE OF THE WORK, EVEN IF LICENSOR HAS BEEN
    ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 7. **Termination**
+
   a. This License and the rights granted hereunder will terminate
      automatically upon any breach by You of the terms of this License.
      Individuals or entities who have received Adaptations or Collections from
@@ -256,6 +279,7 @@ in Section 4(e).
      provided such individuals or entities remain in full compliance with those
      licenses. Sections 1, 2, 5, 6, 7, and 8 will survive any termination of
      this License.
+
   b. Subject to the above terms and conditions, the license granted here is
      perpetual (for the duration of the applicable copyright in the Work).
      Notwithstanding the above, Licensor reserves the right to release the Work
@@ -265,26 +289,32 @@ in Section 4(e).
      granted under the terms of this License), and this License will continue
      in full force and effect unless terminated as stated above.
 8. **Miscellaneous**
+
   a. Each time You Distribute or Publicly Perform the Work or a Collection, the
      Licensor offers to the recipient a license to the Work on the same terms
      and conditions as the license granted to You under this License.
+
   b. Each time You Distribute or Publicly Perform an Adaptation, Licensor
      offers to the recipient a license to the original Work on the same terms
      and conditions as the license granted to You under this License.
+
   c. If any provision of this License is invalid or unenforceable under
      applicable law, it shall not affect the validity or enforceability of the
      remainder of the terms of this License, and without further action by the
      parties to this agreement, such provision shall be reformed to the minimum
      extent necessary to make such provision valid and enforceable.
+
   d. No term or provision of this License shall be deemed waived and no breach
      consented to unless such waiver or consent shall be in writing and signed
      by the party to be charged with such waiver or consent.
+
   e. This License constitutes the entire agreement between the parties with
      respect to the Work licensed here. There are no understandings, agreements
      or representations with respect to the Work not specified here. Licensor
      shall not be bound by any additional provisions that may appear in any
      communication from You. This License may not be modified without the
      mutual written agreement of the Licensor and You.
+
   f. The rights granted under, and the subject matter referenced, in this
      License were drafted utilizing the terminology of the Berne Convention for
      the Protection of Literary and Artistic Works (as amended on September 28,
