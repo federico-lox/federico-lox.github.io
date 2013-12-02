@@ -19,7 +19,7 @@
 			<h1>{{site.title}}</h1>
 			<h2>{{site.subtitle}}</h2>
 			<figure>
-				<img src=images/avatar.png width=128 height=128 />
+				<img src=images/avatar.png?cb={{site.cache-buster}} width=128 height=128 />
 			</figure>
 			<nav class=backdrop>
 				<ul>
@@ -54,7 +54,7 @@ doit()
 			<a href=http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US
 				rel=license>
 				<img alt="Creative Commons License"
-					src=images/cc-nc-sa-license.png />
+					src=images/cc-nc-sa-license.png?cb={{site.cache-buster}} />
 			</a>
 		</footer>
 	</body>
