@@ -83,8 +83,8 @@ body {
 	font-weight: bold;
 }
 
-#page-footer > img {
+#page-footer img[rel="license"] {
 	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
-    display: block;
-    margin: 2rem auto 0;
+	display: block;
+	margin: 2rem auto 0;
 }
