@@ -9,8 +9,9 @@ body {
 	color: #000;
 	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif,
 		"Helvetica Neue", HelveticaNeue, Arial, sans-serif;
-	font-size: 1.4rem;
-	line-height: 1.4;
+	font-size: 1rem;
+	line-height: 1;
+	min-width: 37rem;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }
@@ -27,6 +28,7 @@ body {
 
 #page-header > h1 {
 	font-size: 4.2rem;
+	margin-bottom: 1.8rem;
 	text-align: center;
 }
 
@@ -67,6 +69,39 @@ body {
 	color: #fff;
 	font-size: 1.4rem;
 	margin: 0 0.7rem;
+}
+
+#page-body {
+	font-size: 1.5rem;
+	line-height: 3rem;
+	margin: 0 auto;
+	max-width: 70rem;
+	padding: 0 3rem;
+    text-align: justify;
+    text-justify: newspaper;
+}
+
+pre {
+	color: #fdce93;
+	background-color: #3f3f3f;
+	border-left: 1rem solid {{page.accent-color}};
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	font-size: 1.4rem;
+	line-height: 2rem;
+	margin: 3rem;
+	padding: 2rem;
+}
+
+code {
+	font-size: 1.4rem;
+}
+
+code .lineno {
+	border-right: 1px solid #5a5a5a;
+	display: inline-block;
+	height: 2rem;
+	padding: 0 1rem 0 0;
 }
 
 #page-footer {
