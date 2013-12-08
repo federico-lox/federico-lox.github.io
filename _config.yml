@@ -1,3 +1,6 @@
+safe: true
+lsi: false
+pygments: true
 title: "A byte of Lox"
 subtitle: "Changing the Web 0x00000001 at a time."
 author:
