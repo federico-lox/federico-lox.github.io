@@ -1,7 +1,11 @@
 ---
-accent-color: "#8fbede"
-background-color: "#f6f6f6"
-background-color-secondary: "#3f3f3f"
+accent-color: "#8FBEDE"
+background-color: "#F6F4F0"
+background-color-secondary: "#3F3F3F"
+border-color: "#C5C3C0"
+border-color2: "#FFF"
+margin: "5rem"
+text-color: "#000"
 ---
 {% include styles/reset.css %}
 {% include styles/pygments.css %}
