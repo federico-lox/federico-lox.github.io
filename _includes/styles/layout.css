@@ -16,15 +16,45 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-.backdrop {
-	background: {{page.background-color-secondary}};
-	background: linear-gradient(to bottom, #1d1d1d 0%,{{page.background-color-secondary}} 20%);
-	text-shadow: 0px 4px 5px rgba(0,0,0,1);
+.page-ruler {
+	background: linear-gradient(to right, rgba(0,0,0,0) 0%,{{page.border-color}} 8%,{{page.border-color}} 92%,rgba(0,0,0,0) 100%);
+	height: .1rem;
+	margin: 4rem auto;
+	max-width: 80rem;
 }
 
-#page-header {
-	margin: 4rem 0;
+.title-ruler {
+	background: linear-gradient(to right, rgba(0,0,0,0) 0%,{{page.border-color}} 8%,{{page.border-color}} 92%,rgba(0,0,0,0) 100%);
+	border: none;
+	height: .1rem;
+	margin: 2.4rem auto {{page.margin}};
+	overflow: visible;
+	text-align: center;
 }
+
+.title-ruler::before {
+	background: {{page.border-color2}};
+	border: .1rem solid {{page.border-color}};
+	border-radius: 50%;
+	color: {{page.border-color}};
+    content: "§";
+    display: inline-block;
+	font-size: 2rem;
+	height: 3rem;
+    position: relative;
+	top: -1.3rem;
+	width: 3rem;
+}
+
+.title-ruler::after {
+    content: "";
+    background: linear-gradient(to right, rgba(0,0,0,0) 0%,{{page.border-color}} 8%,{{page.border-color}} 92%,rgba(0,0,0,0) 100%);
+	display: block;
+    height: 0.1rem;
+    margin: -2.8rem auto;
+}
+
+#page-header { margin: {{page.margin}} auto; }
 
 #page-header > h1 {
 	font-size: 4.2rem;
@@ -40,45 +70,19 @@ body {
 	text-align: center;
 }
 
-#page-header > figure {
-	height: 10rem;
-	margin-top: 4rem;
-}
-
-#page-header > figure > img {
-	border: 4px solid {{page.background-color}};
-	border-radius: 50%;
-	display: block;
-	margin: 0 auto;
-	position: relative;
-}
-
-#page-header > nav {
-	height: 9rem;
-}
-
-#page-header > nav > ul {
-	list-style: none;
-	text-align: center;
-	position: relative;
-	top: 5.4rem;
-}
-
-#page-header > nav li {
-	display: inline-block;
-	color: #fff;
-	font-size: 1.4rem;
-	margin: 0 0.7rem;
-}
-
 #page-body {
 	font-size: 1.5rem;
 	line-height: 3rem;
 	margin: 0 auto;
 	max-width: 70rem;
-	padding: 0 3rem;
+	padding: 0 {{page.margin}};
     text-align: justify;
     text-justify: newspaper;
+}
+
+#page-body h1 {
+	font-size: 2.5rem;
+	text-align: center;
 }
 
 pre {
@@ -89,37 +93,44 @@ pre {
 	border-bottom-right-radius: 0.5rem;
 	font-size: 1.4rem;
 	line-height: 2rem;
-	margin: 3rem;
-	padding: 2rem;
-}
-
-code {
-	font-size: 1.4rem;
-}
-
-code .lineno {
-	border-right: 1px solid #5a5a5a;
-	display: inline-block;
-	height: 2rem;
-	padding: 0 1rem 0 0;
+	margin: 3rem 0;
+	padding: 1rem;
 }
 
 #page-footer {
-	color: #fff;
 	font-size: 1.4rem;
-	margin-top: 4rem;
-	padding: 2rem 0 4rem;
+	margin: 10rem auto;
 	text-align: center;
+	padding-bottom: 6rem;
+}
+
+#page-footer figure { text-align: center; }
+
+#page-footer figure figcaption { margin-top: -{{page.margin}}; }
+
+#page-footer figure figcaption a[rel="license"] > img {
+        box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+        display: block;
+        margin: 2rem auto 0;
+}
+
+#avatar {
+	border: .1rem solid {{page.border-color}};
+	border-radius: 50%;
+	display: inline-block;
+	position: relative;
+	top: -7rem;
+}
+
+#avatar img {
+	border: .4rem solid {{page.border-color2}};
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
 }
 
 #page-footer a:link, #page-footer a:visited, #page-footer a:active {
-	color: #fff;
+	color: {{page.text-color}};
 	text-decoration: none;
 	font-weight: bold;
-}
-
-#page-footer a[rel="license"] > img {
-	box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
-	display: block;
-	margin: 2rem auto 0;
 }
