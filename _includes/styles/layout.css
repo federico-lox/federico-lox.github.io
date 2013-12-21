@@ -54,7 +54,7 @@ a:hover {
 }
 
 a:visited {
-	color: {{ page.border-color }};
+	color: {{ page.accent-color }};
 }
 
 .page-ruler {
@@ -152,14 +152,8 @@ a:visited {
 #page-body pre > code::first-line { line-height: 0; }
 
 #page-body pre > code::before {
-	-moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
-	-moz-transform-origin: 3.4rem 5.7rem;
-	-ms-transform-origin: 3.4rem 5.7rem;
-	-o-transform-origin: 3.4rem 5.7rem;
-	-webkit-transform-origin: 3.4rem 5.7rem;
+	{% include styles/mixins/prefixed.css property="transform" value="rotate(-90deg)" %}
+	{% include styles/mixins/prefixed.css property="transform-origin" value="3.2rem 6rem" %}
 	color: {{ page.border-color }};
 	display: inline-block;
 	content: attr(class);
