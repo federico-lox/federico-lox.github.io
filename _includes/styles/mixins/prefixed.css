@@ -1,0 +1,4 @@
+-moz-{{ include.property }}: {{ include.value }};
+-ms-{{ include.property }}: {{ include.value }};
+-o-{{ include.property }}: {{ include.value }};
+-webkit-{{ include.property }}: {{ include.value }};
