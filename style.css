@@ -1,12 +1,14 @@
 ---
-accent-color: "#8FBEDE"
+accent-color: "#999896"
 background-color: "#F6F4F0"
-background-color-secondary: "#3F3F3F"
+background-color2: "#FFF"
 border-color: "#C5C3C0"
 border-color2: "#FFF"
+font-family: "\"Helvetica Neue\", Arial, Helvetica, sans-serif,
+\"Helvetica Neue\", HelveticaNeue, Arial, sans-serif"
+content-font-size: "1.5rem"
 margin: "5rem"
 text-color: "#000"
 ---
 {% include styles/reset.css %}
-{% include styles/pygments.css %}
 {% include styles/layout.css %}
