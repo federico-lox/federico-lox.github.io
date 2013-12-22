@@ -1,5 +1,5 @@
 ---
-accent-color: "#8A8987"
+accent-color: "#000"
 background-color: "#F6F4F0"
 background-color2: "#FFF"
 border-color: "#999896"
@@ -8,6 +8,7 @@ font-family: "\"Helvetica Neue\", Arial, Helvetica, sans-serif,
 \"Helvetica Neue\", HelveticaNeue, Arial, sans-serif"
 content-font-size: "1.5rem"
 margin: "5rem"
+max-page-width: "77rem"
 text-color: "#000"
 ---
 {% include styles/reset.css %}
