@@ -14,30 +14,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-blockquote {
-	font-style: italic;
-	font-weight: lighter;
-	margin: 3rem 0;
-}
-
-blockquote::before {
-	color: {{ page.border-color }};
-	content: "“";
-	float: left;
-	font-size: 6rem;
-	margin: 1rem 0 0 -0.5rem;
-}
-
-blockquote::after {
-	color: {{ page.border-color }};
-	content: "”";
-	font-size: 6rem;
-	float: right;
-	margin: -1rem -0.5rem 0 0;
-}
-
-blockquote > p { margin: 0 1rem 0 2rem; }
-
 code { font-size: {{ page.content-font-size }}; }
 
 p { margin: 1rem 0; }
@@ -46,11 +22,6 @@ ul, ol { padding: 0 3rem; }
 
 a:link, a:active {
 	color: {{ page.accent-color }};
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
 }
 
 a:visited {
@@ -86,42 +57,40 @@ a:visited {
 	font-size: {{ page.content-font-size }};
 	line-height: 3rem;
 	margin: 0 auto;
-	max-width: 76rem;
+	max-width: {{ page.max-page-width }};
 	padding: 0 {{ page.margin }};
     text-align: justify;
     text-justify: newspaper;
 }
 
 #page-body h1 {
+	border-bottom: .1rem solid {{ page.border-color }};
 	font-size: 2.5rem;
-	margin-top: -3rem;
+	margin-bottom: 3rem;
 	text-align: center;
 }
 
 #page-body h1::before {
-	background: {{ page.border-color2 }};
+	background: {{ page.border-color }};
 	border: .1rem solid {{ page.border-color }};
 	border-radius: 50%;
-	color: {{ page.accent-color }};
-    content: "§";
+	content: "";
     display: block;
-	font-size: 2rem;
-	height: 3.3rem;
+	height: 2.4rem;
 	margin: 0 auto;
     position: relative;
-	top: 7.5rem;
-	width: 3.4rem;
+	top: 7.2rem;
+	width: 2.4rem;
 }
 
 #page-body h1::after {
-    content: " ";
-	background: {{ page.border-color }};
-    background: linear-gradient(to right, rgba(0,0,0,0) 0%,
-				{{ page.border-color }} 8%,{{ page.border-color }} 92%,
-				rgba(0,0,0,0) 100%);
+    content: "§";
+	color: {{ page.background-color }};
 	display: block;
-    height: 0.1rem;
-    margin: 3rem auto;
+    font-size: 1.8rem;
+	position: relative;
+	top: 1.4rem;
+	font-weight: normal;
 }
 
 #page-body h2, #page-body h3, #page-body h4, #page-body h5, #page-body h6 {
@@ -138,48 +107,81 @@ a:visited {
 
 #page-body h6 { font-size: {{ page.content-font-size }}; }
 
-#page-body pre > code {
-	border-left: 0.3rem solid {{ page.border-color }};
+
+#page-body pre, #page-body blockquote {
+	border-left: .1rem solid {{ page.border-color }};
+	margin: 3rem .6rem 3rem 2rem;
+}
+
+#page-body pre > code, #page-body blockquote > p {
 	display: block;
 	line-height: 2.5rem;
-	margin: 3rem 0.6rem 3rem 2rem;
-	min-height: 4rem;
-	padding: 1rem;
+	padding: 3.5rem 1.5rem 1rem;
+	position: relative;
 	word-wrap: break-word;
+}
+
+#page-body blockquote > p {
+	font-size: 1.6rem;
+	font-style: italic;
 }
 
 /* remove empty line at the beginning fenced code blocks */
 #page-body pre > code::first-line { line-height: 0; }
 
-#page-body pre > code::before {
-	{% include styles/mixins/prefixed.css property="transform" value="rotate(-90deg)" %}
-	{% include styles/mixins/prefixed.css property="transform-origin" value="3.2rem 6rem" %}
-	color: {{ page.border-color }};
-	display: inline-block;
-	content: attr(class);
-	font-family: {{ page.font-family }};
-	font-size: 1.2rem;
+#page-body pre > code::before, #page-body blockquote > p::before {
+	background: {{ page.border-color }};
+	border: .1rem solid {{ page.border-color }};
+	border-bottom-right-radius: 2rem;
+	border-top-right-radius: 2rem;
+	color: {{ page.background-color }};
+	content: "<>";
+	display: inline-flex;
+	font-size: 1.4rem;
 	font-weight: bold;
-	position: relative;
-	text-align: right;
-	width: 10rem;
+	left: -1rem;
+	letter-spacing: .3rem;
+	padding: 0 .7rem 0 1rem;
+	position: absolute;
+	top: 0rem;
+}
+
+#page-body blockquote > p::before {
+	content: "“”";
+	font-size: 1.7rem;
+	line-height: 18px; /* rem fails on IE11 in this case */
+	padding-top: .7rem;
+	padding-right: .9rem
+}
+
+#page-body pre > code::after, #page-body blockquote > p::after {
+	border-left: 1rem solid transparent;
+	border-top: 1rem solid #575757;
+	content: "";
+	float: left;
+	height: 0;
+	left: -1rem;
+	position: absolute;
+	top: 2.6rem;
+	width: 0;
 }
 
 #page-footer {
 	font-size: 1.4rem;
-	margin: 10rem auto;
+	margin: 11rem auto;
+	max-width: {{ page.max-page-width }};
 	text-align: center;
 	padding-bottom: 6rem;
 }
 
 #page-footer figure { text-align: center; }
 
-#page-footer figure figcaption { margin-top: -{{ page.margin }}; }
+#page-footer figure figcaption { margin-top: -4rem; }
 
 #page-footer figure figcaption a[rel="license"] > img {
-        box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 3px 10px 0px rgba(0,0,0,.75);
         display: block;
-        margin: 2rem auto 0;
+        margin: 1rem auto 3rem;
 }
 
 #avatar {
@@ -187,7 +189,7 @@ a:visited {
 	border-radius: 50%;
 	display: inline-block;
 	position: relative;
-	top: -7rem;
+	top: -5rem;
 }
 
 #avatar img {
