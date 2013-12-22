@@ -1,5 +1,9 @@
-task :default => :start_server
+task :default => :server
 
-task :start_server do
-  sh "jekyll serve --watch --host 127.0.0.1 --trace"
+task :server do
+  sh "jekyll serve --watch --host 127.0.0.1"
+end
+
+task :build do
+  sh "jekyll build --trace"
 end
