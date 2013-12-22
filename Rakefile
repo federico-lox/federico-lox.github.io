@@ -1,7 +1,8 @@
 task :default => :server
 
-task :server do
-  sh "jekyll serve --watch --host 127.0.0.1"
+task :server , :response do |t, args|
+  host = args[:response] || "127.0.0.1"
+  sh "jekyll serve --watch --host #{host}"
 end
 
 task :build do
