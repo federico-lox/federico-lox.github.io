@@ -7,7 +7,7 @@ body {
   color: {{ site.data.theme.color.main }};
   font-family: {{ site.data.theme.font.family.proportional.sans }};
   font-size: {{ site.data.theme.font.size.normal }};
-  line-height: {{ site.data.theme.dimension.line.height }};
+  line-height: {{ site.data.theme.dimension.line_height }};
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }

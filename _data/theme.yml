@@ -38,5 +38,4 @@ dimension:
   padding: "2rem"
 
   # The standard height of a line of text
-  line:
-    height: "2rem"
+  line_height: "2rem"
