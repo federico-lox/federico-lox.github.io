@@ -1,0 +1,42 @@
+color:
+  # Links and secondary decorations
+  accent: "#000"
+
+  # Main textual content
+  main: "#000"
+
+  # Page background
+  background: "#F6F4F0"
+
+  # Borders and separators
+  border: "#999896"
+
+font:
+  family:
+    monospaced: "Consolas, Courier, monospaced"
+    proportional:
+      sans: "\"Helvetica Neue\", Helvetica, Arial, sans-serif"
+      serif: "\"Times New Roman\", serif"
+
+  size:
+    # The base set on the root html element for the rem unit
+    reference: "10px"
+    small: "1rem"
+    normal: "1.2rem"
+    medium: "1.5rem"
+    big: "2rem"
+    huge: "2.2rem"
+
+dimension:
+  # The size of a content page (maximum)
+  content-width: "700px"
+
+  # The standard size for margins\
+  margin: "4rem"
+
+  #The standard size for paddings
+  padding: "2rem"
+
+  # The standard height of a line of text
+  line:
+    height: "2rem"
