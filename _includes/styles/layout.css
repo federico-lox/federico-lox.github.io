@@ -3,11 +3,11 @@
 html { font-size: {{ site.data.theme.font.size.reference }}; }
 
 body {
-	background-color: {{ site.data.theme.color.background }};
-	color: {{ site.data.theme.color.main }};
-	font-family: {{ site.data.theme.font.family.proportional.sans }};
-	font-size: {{ site.data.theme.font.size.normal }};
-	line-height: {{ site.data.theme.dimension.line.height }};
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
+  background-color: {{ site.data.theme.color.background }};
+  color: {{ site.data.theme.color.main }};
+  font-family: {{ site.data.theme.font.family.proportional.sans }};
+  font-size: {{ site.data.theme.font.size.normal }};
+  line-height: {{ site.data.theme.dimension.line.height }};
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
