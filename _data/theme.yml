@@ -1,15 +1,8 @@
 color:
-  # Links and secondary decorations
   accent: "#000"
-
-  # Main textual content
-  main: "#000"
-
-  # Page background
   background: "#F6F4F0"
-
-  # Borders and separators
-  border: "#999896"
+  main: "#000"
+  secondary: "#999896"
 
 font:
   family:
@@ -20,22 +13,26 @@ font:
 
   size:
     # The base set on the root html element for the rem unit
-    reference: "10px"
-    small: "1rem"
-    normal: "1.2rem"
-    medium: "1.5rem"
-    big: "2rem"
-    huge: "2.2rem"
+    reference: "12px"
+    small: "1.2rem"
+    normal: "1.3rem"
+    medium: "1.4rem"
+    big: "1.5rem"
+    large: "1.6rem"
+    extra_large: "1.8rem"
+    huge: "2.6rem"
+    largest: "3rem"
 
 dimension:
-  # The size of a content page (maximum)
-  content-width: "700px"
+  content:
+    min_width: "500px"
+    max_width: "700px"
 
   # The standard size for margins\
-  margin: "4rem"
+  margin: "50px"
 
   #The standard size for paddings
   padding: "2rem"
 
   # The standard height of a line of text
-  line_height: "2rem"
+  line_height: "2.3rem"
