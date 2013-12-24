@@ -1,7 +1,8 @@
 safe: true
 lsi: false
 pygments: false
-exclude: ["Gemfile", "Gemfile.lock", "*.sublime-project", "Rakefile", "LICENSE.md"]
+exclude: ["Gemfile", "Gemfile.lock", "*.sublime-project", "Rakefile",
+					"LICENSE.md", "TODO.md"]
 title: "A byte of Lox"
 subtitle: "Changing the Web 0x00000001 at a time."
 author:
