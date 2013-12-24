@@ -3,6 +3,7 @@ color:
   background: "#F6F4F0"
   main: "#000"
   secondary: "#999896"
+  tertiary: "#FFF"
 
 font:
   family:
@@ -14,6 +15,7 @@ font:
   size:
     # The base set on the root html element for the rem unit
     reference: "12px"
+    tiny: "1rem"
     small: "1.2rem"
     normal: "1.3rem"
     medium: "1.4rem"
@@ -24,15 +26,21 @@ font:
     largest: "3rem"
 
 dimension:
-  content:
-    min_width: "500px"
-    max_width: "700px"
+  width:
+    minimum: "400px"
+    maximum: "700px"
+    breakpoint: "550px"
 
-  # The standard size for margins\
-  margin: "50px"
-
-  #The standard size for paddings
-  padding: "2rem"
+  spacing:
+    small: ".5rem"
+    normal: "1rem"
+    medium: "2rem"
+    big: "2.5rem"
+    small_fixed: "20px"
+    normal_fixed: "30px"
+    large_fixed: "50px"
 
   # The standard height of a line of text
-  line_height: "2.3rem"
+  line_height:
+    small: "1.2rem"
+    normal: "2.3rem"
