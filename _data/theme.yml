@@ -36,11 +36,20 @@ dimension:
     normal: "1rem"
     medium: "2rem"
     big: "2.5rem"
-    small_fixed: "20px"
-    normal_fixed: "30px"
-    large_fixed: "50px"
+    large: "3rem"
 
   # The standard height of a line of text
   line_height:
     small: "1.2rem"
     normal: "2.3rem"
+
+avatar:
+  width: 100
+  height: 100
+
+spacing:
+  fixed:
+    tiny: 10
+    small: 20
+    normal: 30
+    large: 50
