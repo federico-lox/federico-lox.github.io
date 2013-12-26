@@ -1,0 +1,4 @@
+{% include styles/mixins/prefixed.css property="box-shadow" value="0 0 8px rgba(50, 50, 50, .3)" w3c=true %}
+background: {{ site.data.theme.color.secondary}};
+border-bottom-right-radius: {{ include.rounding }};
+border-top-right-radius: {{ include.rounding }};

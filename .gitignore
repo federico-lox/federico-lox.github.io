@@ -1,3 +1,4 @@
 Gemfile.lock
 *.komodoproject
+*.sublime-*
 _site/

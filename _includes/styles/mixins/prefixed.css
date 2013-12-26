@@ -2,3 +2,6 @@
 -ms-{{ include.property }}: {{ include.value }};
 -o-{{ include.property }}: {{ include.value }};
 -webkit-{{ include.property }}: {{ include.value }};
+{% if include.w3c == true %}
+{{ include.property }}: {{ include.value }};
+{% endif %}

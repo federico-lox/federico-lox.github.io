@@ -1,30 +1,32 @@
-		</section>
+    </section>
 
-		<footer id=page-footer>
-			<figure class=page-ruler>
-				<a id=avatar href={{ site.author.google-profile }}
-				   title="{{ site.author.name | xml_escape }}">
-					<img  src=images/avatar.jpg?cb={{ site.cache-buster }}
-						  width=100 height=100
-						  name="{{ site.author.name | xml_escape }}"/>
-				</a>
-				<figcaption>
-					<a href=http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US
-					    rel=license>
-						<img alt="Creative Commons License"
-							 src=images/cc-nc-sa-license.png?cb={{ site.cache-buster }}
-							 width=88 height=31 />
-                    </a>
-					<span property=dct:titlexmlns:dct=http://purl.org/dc/terms/>{{ site.title | xml_escape}}</span>
-					by
-					<a href={{ site.author.google-profile }}
-						rel=cc:attributionURL
-						property=cc:attributionName
-						xmlns:cc=http://creativecommons.org/ns#>
-						{{ site.author.name | xml_escape }}
-					</a>
-				</figcaption>
-			</figure>
-		</footer>
-	</body>
+    <footer id=footer
+            class="centered content-centered page-content">
+      <figure class=page-ruler>
+        <a id=avatar href={{ site.author.google-profile }}
+           title="{{ site.author.name | xml_escape }}">
+          <img  src="images/avatar.jpg?cb={{ site.cache-buster }}"
+                width={{ site.data.theme.avatar.width }} height={{ site.data.theme.avatar.height }}
+                name="{{ site.author.name | xml_escape }}">
+        </a>
+        <figcaption>
+          <span property="dct:titlexmlns:dct=http://purl.org/dc/terms/">{{ site.title | xml_escape}}</span>
+          by
+          <a href={{ site.author.google-profile }}
+             rel=cc:attributionURL
+             property=cc:attributionName
+             xmlns:cc=http://creativecommons.org/ns#>
+            {{ site.author.name | xml_escape }}
+          </a>
+          <br>
+          <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"
+             rel=license title="Creative Commons License">
+            <img alt="Creative Commons License"
+                 src="images/cc-nc-sa-license.png?cb={{ site.cache-buster }}"
+                 width=88 height=31>
+          </a>
+        </figcaption>
+      </figure>
+    </footer>
+  </body>
 </html>

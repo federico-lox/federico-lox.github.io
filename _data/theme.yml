@@ -1,0 +1,55 @@
+color:
+  accent: "#000"
+  background: "#F6F4F0"
+  main: "#000"
+  secondary: "#999896"
+  tertiary: "#FFF"
+
+font:
+  family:
+    monospaced: "Consolas, Courier, monospaced"
+    proportional:
+      sans: "\"Helvetica Neue\", Helvetica, Arial, sans-serif"
+      serif: "\"Times New Roman\", serif"
+
+  size:
+    # The base set on the root html element for the rem unit
+    reference: "12px"
+    tiny: "1rem"
+    small: "1.2rem"
+    normal: "1.3rem"
+    medium: "1.4rem"
+    big: "1.5rem"
+    large: "1.6rem"
+    extra_large: "1.8rem"
+    huge: "2.6rem"
+    largest: "3rem"
+
+dimension:
+  width:
+    minimum: "400px"
+    maximum: "700px"
+    breakpoint: "550px"
+
+  spacing:
+    small: ".5rem"
+    normal: "1rem"
+    medium: "2rem"
+    big: "2.5rem"
+    large: "3rem"
+
+  # The standard height of a line of text
+  line_height:
+    small: "1.2rem"
+    normal: "2.3rem"
+
+avatar:
+  width: 100
+  height: 100
+
+spacing:
+  fixed:
+    tiny: 10
+    small: 20
+    normal: 30
+    large: 50
