@@ -1,0 +1,40 @@
+/* icons.css */
+@font-face {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	src:url('{{ site.url }}/fonts/icomoon.eot');
+	src:url('{{ site.url }}/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('{{ site.url }}/fonts/icomoon.ttf') format('truetype'),
+		url('{{ site.url }}/fonts/icomoon.woff') format('woff'),
+		url('{{ site.url }}/fonts/icomoon.svg#icomoon') format('svg');
+}
+
+.icon, .icon-home:before, .icon-photo:before, .icon-music:before, .icon-video:before,
+.icon-next:before, .icon-previous:before, .icon-link:before, .icon-text:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'icomoon';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+	text-transform: none;
+}
+
+.icon-home:before { content: "\e600"; }
+
+.icon-photo:before { content: "\e601"; }
+
+.icon-music:before { content: "\e603"; }
+
+.icon-video:before { content: "\e604"; }
+
+.icon-next:before { content: "\e605"; }
+
+.icon-previous:before { content: "\e606"; }
+
+.icon-link:before { content: "\e607"; }
+
+.icon-text:before { content: "\e602"; }
