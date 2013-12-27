@@ -1,4 +1,5 @@
 ---
 ---
 {% include styles/reset.css %}
+{% include styles/icons.css %}
 {% include styles/layout.css %}

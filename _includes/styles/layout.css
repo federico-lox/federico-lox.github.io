@@ -15,6 +15,18 @@ body {
   word-wrap: break-word;
 }
 
+a:link, a:visited { color: {{ site.data.theme.color.accent }}; }
+
+a:active, a:hover { color: {{ site.data.theme.color.secondary }}; }
+
+article footer { font-size: {{ site.data.theme.font.size.small }}; }
+
+article footer a {
+  float:right;
+  word-wrap: normal;
+  white-space: nowrap;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bolder;
   margin: {{ site.data.theme.dimension.spacing.big }} 0 {{ site.data.theme.dimension.spacing.small }};
@@ -31,6 +43,8 @@ h4 { font-size: {{ site.data.theme.font.size.big }}; }
 h5 { font-size: {{ site.data.theme.font.size.medium }}; }
 
 h6 { font-size: ; }
+
+h1 a:link { text-decoration: none; }
 
 p { margin: {{ site.data.theme.dimension.spacing.normal }} 0; }
 
@@ -100,9 +114,7 @@ pre:after, blockquote:after {
 
 blockquote:before { content: "Quote" ;}
 
-a:link, a:visited { color: {{ site.data.theme.color.accent }}; }
-
-a:active, a:hover { color: {{ site.data.theme.color.secondary }}; }
+time { font-style: italic; }
 
 .centered { margin: 0 auto; }
 
@@ -141,24 +153,54 @@ a:active, a:hover { color: {{ site.data.theme.color.secondary }}; }
   border-bottom: 1px solid {{ site.data.theme.color.secondary }};
   line-height: {{ site.data.theme.dimension.spacing.large }};
   margin-bottom: {{ site.data.theme.dimension.spacing.big }};
+  padding-bottom: 20px;
   position: relative;
   text-align: center;
 }
 
-#content h1:after {
+#content h1:before {
+  background: {{ site.data.theme.color.secondary }};
+  border-radius: 50%;
+  bottom: -{{ site.data.theme.decoration.size | divided_by:2 }}px;
+  color: {{ site.data.theme.color.background }};
+  font-size: {{ site.data.theme.decoration.size | minus:10 }}px;
+  height: {{ site.data.theme.decoration.size }}px;
+  left: 0;
+  line-height: {{ site.data.theme.decoration.size }}px;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: {{ site.data.theme.decoration.size }}px;
+}
+
+#paginator {
+  margin: 0 auto;
+  position: relative;
+  top: -{{ site.data.theme.decoration.size | divided_by:2 }}px;;
+  width: 250px;
+}
+
+#paginator a:link { text-decoration: none; }
+
+#paginator .prev {
+  left: 0;
+}
+
+#paginator .next {
+  right: 0;
+}
+
+#paginator .prev, #paginator .next {
   background: {{ site.data.theme.color.secondary }};
   border-radius: 50%;
   color: {{ site.data.theme.color.background }};
-  content: "§";
   display: block;
-  font-family: {{ site.data.theme.font.family.proportional.serif }};
-  font-size: 15px;
-  height: 20px;
-  line-height: 18px;
-  margin: 0 auto;
-  position: relative;
-  top: 10px;
-  width: 20px;;
+  line-height: {{ site.data.theme.decoration.size }}px;
+  position: absolute;
+  height: {{ site.data.theme.decoration.size }}px;
+  text-align: center;
+  width: {{ site.data.theme.decoration.size }}px;
 }
 
 #footer {
@@ -173,7 +215,6 @@ a:active, a:hover { color: {{ site.data.theme.color.secondary }}; }
   border: 1px solid {{ site.data.theme.color.secondary }};
   border-radius: 50%;
 }
-
 
 @media (max-width : {{ site.data.theme.dimension.width.breakpoint }}) {
   #header h2 {
