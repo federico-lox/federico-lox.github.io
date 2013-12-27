@@ -2,10 +2,28 @@
 
     <footer id=footer
             class="centered content-centered page-content">
+      {% if paginator %}
+      <nav id="paginator">
+        {% if paginator.previous_page %}
+        <a class="icon prev"
+           href="/{% if paginator.previous_page != 1 %}page{{ paginator.previous_page }}{% endif %}"
+           title="Previous page: {{ paginator.previous_page }}/{{ paginator.total_pages }}">
+          &#xe606;
+        </a>
+        {% endif %}
+        {% if paginator.next_page %}
+        <a class="icon next"
+           href="/page{{ paginator.next_page }}"
+           title="Next page: {{ paginator.next_page }}/{{ paginator.total_pages }}">
+          &#xe605;
+        </a>
+        {% endif %}
+      </nav>
+      {% endif %}
       <figure class=page-ruler>
         <a id=avatar href={{ site.author.google-profile }}
            title="{{ site.author.name | xml_escape }}">
-          <img  src="images/avatar.jpg?cb={{ site.cache-buster }}"
+          <img  src="{{ site.url }}/images/avatar.jpg?cb={{ site.cache-buster }}"
                 width={{ site.data.theme.avatar.width }} height={{ site.data.theme.avatar.height }}
                 name="{{ site.author.name | xml_escape }}">
         </a>
@@ -22,7 +40,7 @@
           <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"
              rel=license title="Creative Commons License">
             <img alt="Creative Commons License"
-                 src="images/cc-nc-sa-license.png?cb={{ site.cache-buster }}"
+                 src="{{ site.url }}/images/cc-nc-sa-license.png?cb={{ site.cache-buster }}"
                  width=88 height=31>
           </a>
         </figcaption>
