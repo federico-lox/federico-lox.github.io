@@ -12,4 +12,7 @@ author:
   name: "Federico \"Lox\" Lucignano"
   github-profile: "https://github.com/federico-lox"
   google-profile: "https://plus.google.com/+FedericoLucignano"
-cache-buster: 29
+domain: "federico-lox.github.io"
+cache_buster: 31
+disqus_shortname: "federico-lox"
+google_analytics: "UA-42957328-2"

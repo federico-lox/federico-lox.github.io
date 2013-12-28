@@ -182,6 +182,8 @@ time { font-style: italic; }
   padding-bottom: {{ site.data.theme.dimension.spacing.medium }};
 }
 
+#disqus_thread { margin-top: {{ site.data.theme.spacing.fixed.large }}px; }
+
 #paginator {
   margin: 0 auto;
   position: relative;

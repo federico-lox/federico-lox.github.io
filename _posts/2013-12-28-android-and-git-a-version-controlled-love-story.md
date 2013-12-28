@@ -4,6 +4,7 @@ layout: post
 type: text
 category: development
 published: true
+comments: true
 ---
 Back in August last year, having a _big phone_ (or _phablet_ as those are called
 nowadays) was unusual, having a Bluetooth keyboard connected to such
