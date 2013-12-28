@@ -236,7 +236,7 @@ time { font-style: italic; }
 
 @media (max-width: {{ site.data.theme.dimension.width.breakpoint_small }}) {
   #header h1 {
-    font-size: {{ site.data.theme.font.size.extra_large }};
+    font-size: {{ site.data.theme.font.size.huge }};
   }
   #header h2 {
     font-size: {{ site.data.theme.font.size.tiny }};

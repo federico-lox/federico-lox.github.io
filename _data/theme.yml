@@ -30,7 +30,7 @@ dimension:
     minimum: "320px"
     maximum: "700px"
     breakpoint_medium: "550px"
-    breakpoint_small: "320px"
+    breakpoint_small: "380px"
 
   spacing:
     small: ".5rem"
