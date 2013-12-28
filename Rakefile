@@ -8,3 +8,7 @@ end
 task :build do
   sh "jekyll build --trace"
 end
+
+task :clean do
+	sh "rm -Rf ./_site"
+end
