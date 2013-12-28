@@ -4,18 +4,21 @@
 	<meta charset=utf-8>
 	<meta http-equiv=X-UA-Compatible content="chrome=1">
 	<meta name=viewport content="width=device-width, initial-scale=1.0">
-	<meta name=HandheldFriendly content=true/>
-	<meta name=MobileOptimized content=width/>
+	<meta name=HandheldFriendly content=true>
+	<meta name=MobileOptimized content=width>
 	<link rel=stylesheet type=text/css
 	      href="{{ site.url }}/style.css?cb={{ site.cache-buster }}"
 	      media=screen>
 	<!--[if lt IE 9]>
 	<script src=http://html5shiv.googlecode.com/svn/trunk/html5.js></script>
 	<![endif]-->
-	<title>{{ site.title | xml_escape }} by {{ site.author.name | xml_escape}}</title>
+	<title>
+		{% if include.title %}{{ include.title }}{% else %}{{ site.title | xml_escape }}{% endif %}
+		by {{ site.author.name | xml_escape}}
+	</title>
   </head>
 
-  <body>
+  <body{% if include.body_class %} class="{{ include.body_class }}"{% endif %}>
 	<header id=header
 		class="centered content-centered">
 	  <h1>{{ site.title | xml_escape }}</h1>

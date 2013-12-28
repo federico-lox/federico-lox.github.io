@@ -1,0 +1,12 @@
+<article>
+	{% include views/title.html title=include.post.title type=include.post.type url=include.post.url %}
+  {% if include.abstract == true %}<p>{{ include.post.excerpt | strip_html }}</p>{% else %}{{ content }}{% endif %}
+  <footer>
+  	<time>{{ include.post.date | date:"%A, %B %d %Y" }}</time>
+  	{% if include.abstract == true %}
+  	<a class="more" href="{{ include.post.url }}">Read more</a>
+  	{% else %}
+  		{% if page.category %}in <a href="{{ site.url }}/{{ page.category | uri_escape }}.html">{{ page.category | capitalize | xml_escape }}</a>{% endif %}
+  	{% endif %}
+  </footer>
+</article>
