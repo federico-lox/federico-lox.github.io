@@ -5,13 +5,14 @@
 	font-weight: normal;
 	src:url('{{ site.url }}/fonts/icomoon.eot');
 	src:url('{{ site.url }}/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('{{ site.url }}/fonts/icomoon.ttf') format('truetype'),
-		url('{{ site.url }}/fonts/icomoon.woff') format('woff'),
-		url('{{ site.url }}/fonts/icomoon.svg#icomoon') format('svg');
+			url('{{ site.url }}/fonts/icomoon.ttf') format('truetype'),
+			url('{{ site.url }}/fonts/icomoon.woff') format('woff'),
+			url('{{ site.url }}/fonts/icomoon.svg#icomoon') format('svg');
 }
 
-.icon, .icon-home:before, .icon-photo:before, .icon-music:before, .icon-video:before,
-.icon-next:before, .icon-previous:before, .icon-link:before, .icon-text:before {
+.icon, .icon-home:before, .icon-photo:before, .icon-music:before,
+.icon-video:before, .icon-next:before, .icon-previous:before, .icon-link:before,
+.icon-text:before {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-family: 'icomoon';
