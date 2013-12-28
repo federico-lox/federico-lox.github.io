@@ -2,7 +2,8 @@ safe: true
 lsi: false
 pygments: false
 paginate: 5
-paginate_path: "page-num"
+paginate_path: "page-:num"
+permalink: "none"
 exclude: ["Gemfile", "Gemfile.lock", "*.sublime-*", "Rakefile", "LICENSE.md",
 					"TODO.md"]
 title: "A byte of Lox"
