@@ -27,9 +27,10 @@ font:
 
 dimension:
   width:
-    minimum: "400px"
+    minimum: "320px"
     maximum: "700px"
-    breakpoint: "550px"
+    breakpoint_medium: "550px"
+    breakpoint_small: "320"
 
   spacing:
     small: ".5rem"
