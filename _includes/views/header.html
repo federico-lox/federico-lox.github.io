@@ -8,7 +8,7 @@
 	<meta name=MobileOptimized content=width>
 	<link rel="shortcut icon" href="{{ site.url }}/favicon.ico" type=image/x-icon>
 	<link rel=icon href="{{ site.url }}/images/animated_favicon.ico" type=image/x-icon>
-	<link rel=alternate type=application/atom+xml title="Blog feed" href="{{ site.url }}/atom.xml">
+	<link rel=alternate type=application/atom+xml title="Blog feed" href="{% if site.feedburner %}http://feeds.feedburner.com/{{ site.feedburner }}{% else %}{{ site.url }}/atom.xml{% endif %}">
 	<link rel=stylesheet type=text/css
 	      href="{{ site.url }}/style.css?cb={{ site.cache_buster }}"
 	      media=screen>
