@@ -226,7 +226,7 @@ time { font-style: italic; }
   border-radius: 50%;
 }
 
-@media (max-width : {{ site.data.theme.dimension.width.breakpoint_medium }}) and
+@media (max-width: {{ site.data.theme.dimension.width.breakpoint_medium }}) and
 (min-width: {{ site.data.theme.dimension.width.breakpoint_small }}) {
   #header h2 {
     font-size: {{ site.data.theme.font.size.small }};
@@ -234,7 +234,7 @@ time { font-style: italic; }
   }
 }
 
-@media (max-width : {{ site.data.theme.dimension.width.breakpoint_small }}) {
+@media (max-width: {{ site.data.theme.dimension.width.breakpoint_small }}) {
   #header h1 {
     font-size: {{ site.data.theme.font.size.extra_large }};
   }
