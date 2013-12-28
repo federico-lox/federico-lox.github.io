@@ -13,7 +13,7 @@
 
   {% for post in site.posts %}
   <url>
-    <loc>{{ site.url }}{{ post.url }}/</loc>
+    <loc>{{ site.url }}{{ post.url }}</loc>
     <lastmod>{% if post.lastmod != null %}{{ post.lastmod | date_to_xmlschema }}{% else %}{{ post.date | date_to_xmlschema }}{% endif %}</lastmod>
     <changefreq>{% if post.changefreq%}{{ post.changefreq | lowercase }}{% else %}monthly{% endif %}</changefreq>
     <priority>{% if post.priority %}{{ page.priority }}{% else %}0.2{% endif %}</priority>
