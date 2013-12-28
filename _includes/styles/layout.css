@@ -226,7 +226,8 @@ time { font-style: italic; }
   border-radius: 50%;
 }
 
-@media (max-width : {{ site.data.theme.dimension.width.breakpoint_medium }}) {
+@media (max-width : {{ site.data.theme.dimension.width.breakpoint_medium }}) and
+(min-width: {{ site.data.theme.dimension.width.breakpoint_small }}) {
   #header h2 {
     font-size: {{ site.data.theme.font.size.small }};
     line-height: {{ site.data.theme.dimension.line_height.small }};
