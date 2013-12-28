@@ -2,12 +2,5 @@
 layout: page
 ---
 {% for post in paginator.posts %}
-  <article>
-    <h1 class="icon-{% if post.type %}{{ post.type }}{% else %}text{% endif %}"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-    <p>{{ post.excerpt | strip_html }}</p>
-    <footer>
-    	<time>{{ post.date | date:"%A, %B %d %Y" }}</time>
-    	<a href="{{ post.url }}">Read more</a>
-    </footer>
-  </article>
+{% include views/post.html post=post abstract=true %}
 {% endfor %}
