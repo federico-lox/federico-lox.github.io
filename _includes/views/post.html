@@ -1,6 +1,11 @@
 <article>
+  {% if include.abstract == true %}
 	{% include views/title.html title=include.post.title type=include.post.type url=include.post.url %}
-  {% if include.abstract == true %}<p>{{ include.post.excerpt | strip_html }}</p>{% else %}{{ include.post.content | markdownify }}{% endif %}
+  <p>{{ include.post.excerpt | strip_html }}</p>
+  {% else %}
+  {% include views/title.html title=include.post.title type=include.post.type %}
+  {{ include.post.content | markdownify }}
+  {% endif %}
   <footer>
   	<time>{{ include.post.date | date:"%A, %B %d %Y" }}</time>
   	{% if include.abstract == true %}
