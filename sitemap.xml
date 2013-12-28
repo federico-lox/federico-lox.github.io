@@ -1,0 +1,31 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema  }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ site.url }}{{ post.url }}/</loc>
+    <lastmod>{% if post.lastmod != null %}{{ post.lastmod | date_to_xmlschema }}{% else %}{{ post.date | date_to_xmlschema }}{% endif %}</lastmod>
+    <changefreq>{% if post.changefreq%}{{ post.changefreq | lowercase }}{% else %}monthly{% endif %}</changefreq>
+    <priority>{% if post.priority %}{{ page.priority }}{% else %}0.2{% endif %}</priority>
+  </url>
+  {% endfor %}
+
+  {% for page in site.html_pages %}
+  <url>
+    <loc>{{ site.url }}{{ page.url }}</loc>
+    <lastmod>{% if page.lastmod %}{{ page.lastmod | date_to_xmlschema }}{% elsif page.date %}{{ page.date | date_to_xmlschema }}{% else %}{{ site.time | date_to_xmlschema }}{% endif %}</lastmod>
+    <changefreq>{% if page.changefreq %}{{ page.changefreq | lowercase }}{% else %}monthly{% endif %}</changefreq>
+    <priority>{% if page.priority %}{{ page.priority }}{% else %}0.1{% endif %}</priority>
+  </url>
+  {% endfor %}
+</urlset>
