@@ -1,0 +1,11 @@
+{% capture title %}Things about {{ page.filter | capitalize | xml_escape }}{% endcapture %}
+{% include views/header.html title=title %}
+<h1 class=category>{{ title }}</h1>
+{% for category in site.categories %}
+{% if category[0] == page.filter %}
+{% for post in category[1] %}
+{% include views/post.html post=post abstract=true %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% include views/footer.html %}

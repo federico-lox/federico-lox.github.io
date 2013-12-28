@@ -1,0 +1,3 @@
+<h1 class="icon-{% if include.type %}{{ include.type }}{% else %}text{% endif %}">
+	{% if include.url %}<a href="{{ include.url }}">{% endif %}{{ include.title }}{% if include.url %}</a>{% endif %}
+</h1>

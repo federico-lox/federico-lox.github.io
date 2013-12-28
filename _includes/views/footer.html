@@ -6,14 +6,14 @@
       <nav id="paginator">
         {% if paginator.previous_page %}
         <a class="icon prev"
-           href="/{% if paginator.previous_page != 1 %}page{{ paginator.previous_page }}{% endif %}"
+           href="{{ site.url }}{{ paginator.previous_page_path }}"
            title="Previous page: {{ paginator.previous_page }}/{{ paginator.total_pages }}">
           &#xe606;
         </a>
         {% endif %}
         {% if paginator.next_page %}
         <a class="icon next"
-           href="/page{{ paginator.next_page }}"
+           href="{{ site.url }}{{ paginator.next_page_path }}"
            title="Next page: {{ paginator.next_page }}/{{ paginator.total_pages }}">
           &#xe605;
         </a>
