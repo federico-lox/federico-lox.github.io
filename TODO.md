@@ -3,7 +3,7 @@ Things To Do
 
 Bugs
 ----
-- [ ] ligature decoration under title is positioned wrongly
+- [x] ligature decoration under title is positioned wrongly
 
 Improvements
 ------------
