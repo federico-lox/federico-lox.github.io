@@ -5,7 +5,7 @@ paginate: 5
 paginate_path: "page-:num"
 permalink: "none"
 exclude: ["Gemfile", "Gemfile.lock", "*.sublime-*", "Rakefile", "LICENSE.md",
-					"TODO.md"]
+          "TODO.md"]
 title: "A byte of Lox"
 subtitle: "Changing the Web 0x00000001 at a time."
 author:
@@ -13,7 +13,9 @@ author:
   github-profile: "https://github.com/federico-lox"
   google-profile: "https://plus.google.com/+FedericoLucignano?rel=author"
 url: "http://federico-lox.github.io"
-cache_buster: 38
+cache_buster: 39
 disqus_shortname: "federico-lox"
 feedburner: "federico-lox"
-google_analytics: "UA-42957328-2"
+google_analytics:
+  tracking_id: "UA-42957328-2"
+  page_speed_sample: 100
