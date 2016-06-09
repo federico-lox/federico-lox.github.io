@@ -21,7 +21,7 @@
       </nav>
       {% endif %}
       <figure class=page-ruler>
-        <a id=avatar href={{ site.author.google-profile }}
+        <a id=avatar href={{ site.author.profile }}
            title="{{ site.author.name | xml_escape }}">
           <img  src="{{ site.url }}/images/avatar.jpg?cb={{ site.cache_buster }}"
                 width={{ site.data.theme.avatar.width }} height={{ site.data.theme.avatar.height }}
@@ -30,7 +30,7 @@
         <figcaption>
           <span property="dct:titlexmlns:dct=http://purl.org/dc/terms/">{{ site.title | xml_escape}}</span>
           by
-          <a href={{ site.author.google-profile }}
+          <a href={{ site.author.profile }}
              rel=cc:attributionURL
              property=cc:attributionName
              xmlns:cc=http://creativecommons.org/ns#>
