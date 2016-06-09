@@ -12,7 +12,6 @@
   	<a class="more" href="{{ include.post.url }}">Read more</a>
   	{% else %}
   		{% if page.category %}in <a href="{{ site.url }}/{{ page.category | uri_escape }}.html">{{ page.category | capitalize | xml_escape }}</a>{% endif %}
-      {% include views/disqus.html %}
   	{% endif %}
   </footer>
 </article>

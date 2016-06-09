@@ -4,7 +4,6 @@ layout: post
 type: text
 category: development
 published: true
-comments: true
 ---
 I'm one of those Jurassic reptiles that enjoys using [Vim]; don't ask, just let
 me be and in case you feel like spending a weekend with me and my pack of
